@@ -15,7 +15,7 @@ const Header = () => {
           <h1>Our Special</h1>
         </div>
       </div>
-      <div className="md:hidden fixed w-[95%] h-16 rounded-full bg-white bg-opacity-20  bottom-2 flex items-center justify-evenly">
+      <div className="md:hidden fixed w-[95%] h-16 rounded-full bg-black  bottom-2 flex items-center justify-evenly">
         <div className="flex flex-col items-center justify-center">
           <MdOutlineHome className="text-3xl text-white " />
           <p className="text-primary text-md">Home</p>
