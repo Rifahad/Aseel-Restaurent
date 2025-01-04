@@ -1,8 +1,9 @@
 import React from "react";
 import Logo from "../assets/Logo.png";
-import { MdOutlineHome } from "react-icons/md";
-import { MdFoodBank } from "react-icons/md";
-
+import { MdOutlineHome,MdFoodBank } from "react-icons/md";
+import { IoFastFood } from "react-icons/io5";
+import { IoIosSearch } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,23 +16,23 @@ const Header = () => {
           <h1>Our Special</h1>
         </div>
       </div>
-      <div className="md:hidden fixed w-[95%] h-16 rounded-full bg-black  bottom-2 flex items-center justify-evenly">
-        <div className="flex flex-col items-center justify-center">
+      <div className="md:hidden fixed z-50 w-[95%] h-16 rounded-full bg-black  bottom-2 flex items-center justify-evenly">
+        <Link to="/" className="flex flex-col items-center justify-center">
           <MdOutlineHome className="text-3xl text-white " />
           <p className="text-primary text-md">Home</p>
-        </div>
-        <div className="flex flex-col items-center justify-center">
+        </Link>
+        <Link to="/search" className="flex flex-col items-center justify-center">
           <MdFoodBank  className="text-3xl text-white " />
           <p className="text-white text-md">Category</p>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <MdOutlineHome className="text-3xl text-white " />
+        </Link>
+        <Link to="/search" className="flex flex-col items-center justify-center">
+          <IoFastFood  className="text-3xl text-white " />
           <p className="text-white text-md">Special</p>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <MdOutlineHome className="text-3xl text-white " />
+        </Link>
+        <Link to="/search" className="flex flex-col items-center justify-center">
+          <IoIosSearch  className="text-3xl text-white " />
           <p className="text-white text-md">Search</p>
-        </div>
+        </Link>
       </div>
     </>
   );

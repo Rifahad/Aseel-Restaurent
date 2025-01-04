@@ -40,6 +40,42 @@ body {
   border-radius: 0 0 30px;
 }
 
+.card {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  position: relative; /* Added */
+}
+
+.card::before {
+  content: "";
+  width: 220px;
+  height: 220px; 
+  background: linear-gradient(-38deg,  #FFFFFF44, #FFFFFF00);
+  border-radius: 20px;
+  transform: rotate(15deg);
+  position: absolute; /* Added */
+  top: 0; 
+  left: 0; 
+  z-index: -1; 
+}
+.card::after {
+  content: "";
+  width: 220px;
+  height: 220px; 
+  background: linear-gradient(-38deg,  #FFFFFF44, #FFFFFF00);
+  border-radius: 20px;
+  transform: rotate(-15deg);
+  position: absolute; /* Added */
+  top: 0; 
+  left: 0; 
+  z-index: -1; 
+}
+
+
 
 @media (max-width: 768px) {
   body {

@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/Home';
+import Search from './pages/Search';
+import Product from './pages/Product';
 
 const App = () => {
   return (
@@ -9,8 +11,8 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/category" element={<HomePage />} />
         <Route path="/categorized" element={<HomePage />} />
-        <Route path="/product" element={<HomePage />} />
-        <Route path='/search' element={<HomePage/>} />
+        <Route path="/product" element={<Product />} />
+        <Route path='/search' element={<Search/>} />
       </Routes>
     </BrowserRouter>
   );
