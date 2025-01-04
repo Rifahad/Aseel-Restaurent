@@ -1,0 +1,40 @@
+import React from "react";
+import Header from "../components/Header";
+import ThreeLines from "../components/ThreeLines";
+import Logo from "../assets/Logo.png";
+import BackgroundImage from "../assets/HomeImage.png";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+
+const Home = () => {
+  return (
+    <>
+      <div className="w-full rounded-md flex flex-col box relative ">
+        <Header />
+        <ThreeLines />
+        <div className="w-full h-full flex flex-col md:flex-row bg-red-600 md:bg-transparent ">
+          <div className="w-full md:w-[50%] h-full flex md:flex-col items-center justify-center">
+            <div className="w-[90%] h-auto flex flex-col gap-4 md:gap-12 ">
+              <h1 className="font-black text-6xl text-white ">
+                <img src={Logo} alt="" className="w-44 md:hidden" />
+                Freshness in every
+                <span className="text-primary font-thin"> bite</span>
+              </h1>
+              <p className="text-white">Taste the best that surprise you...</p>
+              <button className="w-[250px] bg-black bg-opacity-50 h-14 rounded-full shadow-sm shadow-white text-white text-sm flex items-center justify-center gap-2">
+                Detailed Menu here
+                <MdOutlineKeyboardDoubleArrowDown className="text-primary" />
+              </button>
+                <h2 className="text-white">Location: Souq Al Furjan 34, Al Thumama, Doha - Qatar</h2>
+                <p className="text-white">Contact Us: 3391 6168, 4493 9556</p>
+            </div>
+          </div>
+          <div className="w-full md:w-[50%] h-full flex items-center justify-center">
+            <img src={BackgroundImage} alt="" />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Home;
