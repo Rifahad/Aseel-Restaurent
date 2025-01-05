@@ -19,7 +19,6 @@ body {
 
 
 .box{
-  height: 850px;
   overflow: hidden;
   background: linear-gradient(-38deg,  #FFFFFF44, #FFFFFF00);
   border-radius: 16px;
@@ -85,4 +84,18 @@ body {
   .header {
     display: none;
   }
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .card::before {
+    width: 150px;
+    height: 150px; 
+  }
+  .card::after {
+    width: 150px;
+    height: 150px; 
+  }
+  
 }

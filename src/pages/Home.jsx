@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       {/* Background Section */}
-      <div className="w-full rounded-md flex flex-col box relative ">
+      <div className="w-full rounded-md flex flex-col box relative h-[850px]">
         <Header />
         <ThreeLines />
         <div className="w-full h-full flex flex-col md:flex-row bg-red-600 md:bg-transparent ">
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </div>
       {/* section 1 categories listing */}
-      <div className="w-full rounded-md flex flex-col box relative mt-8">
+      <div className="w-full rounded-md flex flex-col box relative mt-8 h-[850px]">
         <ThreeLines />
         <div className="flex w-full flex-col h-full bg-red-600 md:bg-transparent">
           <div className="w-full h-[20%] md:h-[30%] flex items-center px-4 md:px-14">
@@ -47,15 +47,19 @@ const Home = () => {
               Categories
             </h1>
           </div>
-          <div className="w-full h-[80%] md:h-[70%] flex flex-col "></div>
+          <div className="w-full h-[80%] md:h-[70%]   flex flex-col "></div>
         </div>
       </div>
-      {/* section 2 */}
+      {/* section 2 heading */}
       <h1 className="font-black text-3xl md:text-6xl text-white text-center mt-8 mb-8">
         ALL ITEMS
       </h1>
-      <div className="w-full rounded-md flex flex-col box relative mt-8">
-        <div className="w-full h-full grid grid-cols-3 gap-4 m-12">
+      {/* List area  */}
+      <div className="w-full rounded-md flex flex-col bg-black box relative mt-8 h-auto mb-4">
+        <div className=" w-full h-[150px] flex items-center pl-4">
+          <h1 className="text-white text-3xl md:text-5xl">Tea & Coffee</h1>
+        </div>
+        <div className="w-full h-full grid place-items-center space-y-6 grid-cols-2 md:grid-cols-4 md:gap-40">
           <Card />
           <Card />
           <Card />
@@ -63,6 +67,47 @@ const Home = () => {
           <Card />
         </div>
       </div>
+      {/* List area  */}
+      <div className="w-full rounded-md flex flex-col bg-black box relative mt-8 h-auto mb-4">
+        <div className=" w-full h-[150px] flex items-center pl-4">
+          <h1 className="text-white text-3xl md:text-5xl">Tea & Coffee</h1>
+        </div>
+        <div className="w-full h-full grid place-items-center space-y-6 grid-cols-2 md:grid-cols-4 md:gap-40">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
+      {/* List area  */}
+      <div className="w-full rounded-md flex flex-col bg-black box relative mt-8 h-auto mb-4">
+        <div className=" w-full h-[150px] flex items-center pl-4">
+          <h1 className="text-white text-3xl md:text-5xl">Tea & Coffee</h1>
+        </div>
+        <div className="w-full h-full grid place-items-center space-y-6 grid-cols-2 md:grid-cols-4 md:gap-40">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
+      {/* List area  */}
+      <div className="w-full rounded-md flex flex-col bg-black box relative mt-8 h-auto mb-4">
+        <div className=" w-full h-[150px] flex items-center pl-4">
+          <h1 className="text-white text-3xl md:text-5xl">Tea & Coffee</h1>
+        </div>
+        <div className="w-full h-full grid place-items-center space-y-6 grid-cols-2 md:grid-cols-4 md:gap-40">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
+      
+
     </>
   );
 };
